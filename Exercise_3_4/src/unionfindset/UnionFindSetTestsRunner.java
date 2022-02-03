@@ -1,0 +1,21 @@
+package unionfindset;
+
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
+/**
+ * 
+ * Runner class for UnionFindSet library tests.
+ * 
+ * @author Daniele Di Palma
+ */
+public class UnionFindSetTestsRunner {
+  public static void main(String[] args) {
+    Result result = JUnitCore.runClasses(UnionFindSetTests.class);
+    for (Failure failure : result.getFailures()) {
+      System.out.println(failure.toString());
+    }
+    System.out.println(result.wasSuccessful());
+  }
+}
