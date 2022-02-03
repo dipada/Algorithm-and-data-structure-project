@@ -1,0 +1,23 @@
+#For all projects
+*.pdf
+*.csv
+*.txt
+!*Relazione*.pdf
+!*BEFORE_README*
+
+# For C projects
+
+# Object files
+*.o
+*.obj
+
+# Executables
+*/bin/*
+*.exe
+*.out
+
+#Exclusion 
+!*/bin/.gitkeep
+
+# For Java projects
+*.class
